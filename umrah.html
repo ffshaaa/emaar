@@ -164,62 +164,76 @@
 
     <!-- Activities area -->
     <section class="cr-section activities-area half--bg bg-image--2 pt--90 pb--150">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-8 offset-lg-2 col-md-10 offset-md-1 col-12 offset-0">
-                    <div class="section-title section-title--white text-center">
-                        <h2>Umrah Packages</h2>
-                       <!--  <p><span>Islam</span> is the know how to pursue pleasure rationally encounter consequences that are extremely painful again is there anyone who loves or pursues or desires to obtain pain of itself</p> -->
-                    </div>
-                </div>
-            </div>
-            <div class="activities">
-                <div class="row">
-                    <!-- Single Activity -->
-                    <div class="col-lg-4 col-md-6 col-sm-12 col-12">
-                        <figure class="activity wow fadeInLeft">
-                            <div class="activity__thumb">
-                                <a href="#">
-                                    <img src="images/umra1.jpg" alt="activity image" />
-                                </a>
-                            </div>
-                            <figcaption class="activity__content text-center">
-                                <h3><a href="#"> Budget Package</a></h3>
-                            </figcaption>
-                        </figure>
-                    </div>
-                    <!-- //Single Activity -->
-                     <!-- Single Activity -->
-                    <div class="col-lg-4 col-md-6 col-sm-12 col-12">
-                        <figure class="activity wow fadeInUp">
-                            <div class="activity__thumb">
-                                <a href="#">
-                                    <img src="images/umra2.jpg" alt="activity image" />
-                                </a>
-                            </div>
-                            <figcaption class="activity__content text-center">
-                                <h3><a href="#">  Semi-Deluxe Package </a></h3>
-                            </figcaption>
-                        </figure>
-                    </div>
-                    <!-- //Single Activity -->
-                    
-                   
-                    <!-- Single Activity -->
-                    <div class="col-lg-4 col-md-6 col-sm-12 col-12 offset-md-3 offset-lg-0 offset-0">
-                        <figure class="activity wow fadeInRight">
-                            <div class="activity__thumb">
-                                <a href="#">
-                                    <img src="images/umra3.jpg" alt="activity image" />
-                                </a>
-                            </div>
-                            <figcaption class="activity__content text-center">
-                                <h3><a href="#"> Premium  Package</a></h3>
-                            </figcaption>
-                        </figure>
-                    </div>
-                    <!-- //Single Activity -->
-                </div>
+    
+                <h1>Select Your Spiritual Journey</h1>
+    
+    <div class="package-container">
+        
+        <div class="package-item">
+            <button onclick="openModal('budgetModal')">Budget Package</button>
+            <img src="./images/BP.png" alt="Affordable Umrah Package Image" class="package-image">
+        </div>
+
+        <div class="package-item">
+            <button onclick="openModal('semiDeluxeModal')">Semi-Deluxe Package</button>
+            <img src="./images/SP.png" alt="Mid-Range Umrah Package Image" class="package-image">
+        </div>
+
+        <div class="package-item">
+            <button onclick="openModal('premiumModal')">Premium Package</button>
+            <img src="./images/PP.png" alt="Luxury Umrah Package Image" class="package-image">
+        </div>
+    </div>
+
+    <div id="budgetModal" class="modal">
+        <div class="modal-content">
+            <span class="close-btn" onclick="closeModal('budgetModal')">&times;</span>
+            <h2>Budget Umrah: Simplicity & Focus </h2>
+            <p>Ideal for: Pilgrims prioritizing the spiritual experience on a lower budget.</p>
+            <ul>
+                <li>Accommodation: 3-Star Hotels (800m+ from Haram)</li>
+                <li>Transport: Shared AC Bus Transfers (Group)</li>
+                <li>Flights: Economy Class (Indirect or longer layovers)</li>
+                <li>Meals: Breakfast Only OR Self-Catered</li>
+                <li>Guidance: Basic Group Leader Assistance</li>
+            </ul>
+            <button class="cta-btn">Book Budget</button>
+        </div>
+    </div>
+
+    <div id="semiDeluxeModal" class="modal">
+        <div class="modal-content">
+            <span class="close-btn" onclick="closeModal('semiDeluxeModal')">&times;</span>
+            <h2>Semi-Deluxe Umrah: Balance & Comfort </h2>
+            <p>Ideal for: Families or those who need a balance between cost and convenience.</p>
+            <ul>
+                <li>Accommodation: 4-Star Hotels (300m - 500m from Haram)</li>
+                <li>Transport: Dedicated AC Mini-Bus Transfers</li>
+                <li>Flights: Economy Class (Direct or minimal layovers)</li>
+                <li>Meals: Half-Board (Breakfast & Dinner Buffet)</li>
+                <li>Guidance: Experienced Local Guide for Ziyarat & Rituals</li>
+            </ul>
+            <button class="cta-btn">Go Semi-Deluxe</button>
+        </div>
+    </div>
+
+    <div id="premiumModal" class="modal">
+        <div class="modal-content">
+            <span class="close-btn" onclick="closeModal('premiumModal')">&times;</span>
+            <h2>Premium Umrah: Luxury & Proximity </h2>
+            <p>Ideal for: Pilgrims seeking maximum comfort, convenience, and proximity to the Holy Sites.</p>
+            <ul>
+                <li>Accommodation: 5-Star Hotels (Haram View or 50m - 200m)</li>
+                <li>Transport: Private Executive Car Service</li>
+                <li>Flights: Business Class OR Premium Economy (Direct)</li>
+                <li>Meals: Full-Board (Gourmet Buffet, All Meals)</li>
+                <li>Guidance: Dedicated Personal Assistant & VIP Services</li>
+            </ul>
+            <button class="cta-btn">Unlock Premium</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
             </div>
         </div>
     </section>
@@ -379,5 +393,18 @@
 	<script src="asset/js/PrayTimes.js"></script>
 	<script src="asset/js/active.js"></script>
 	<script src="asset/js/scripts.js"></script>
+	
+	
+	
+	<footer style="background-color:#f4f4f4; color:#333; text-align:center; padding:30px 10px; font-family:'Poppins', sans-serif; line-height:1.8;">
+
+  <p style="margin:10px 0 0 0; font-size:14px;">
+    Hotel bookings in Sri Lanka & Maldives | Air Ticketing | VIP Travel | Car Rentals | Family & Student Tours | Tailor-Made Packages
+  </p>
+  <p style="margin:10px 0 0 0; font-size:14px;">
+    Explore art, culture, wildlife, yoga & spiritual tours with us – your trusted travel partner.
+  </p>
+</footer>
+
 </body>
 </html>

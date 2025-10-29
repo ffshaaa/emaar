@@ -75,3 +75,4 @@ tabs.forEach((tab, index) => {
         tabs[index].classList.add('is-active');
     });
 });
+
